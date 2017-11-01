@@ -19,7 +19,7 @@ class PigLatinizer
     end
   end
 
-  def to_pig_latin
+  def to_pig_latin(@text)
     @text.split.map {|word| piglatinize(word)}.join(" ")
   end
 end
