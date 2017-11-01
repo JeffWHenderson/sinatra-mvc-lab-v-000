@@ -4,7 +4,6 @@ class PigLatinizer
   # # def intialize(text)
   # #   @text = text
   # # end
-
   def piglatinize(word)
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     consonants = []
