@@ -15,8 +15,8 @@ class PigLatinizer
       until vowels.include?(word[0])
         consonants << word.slice!(0)
       end
+      word + consonants.join + "ay"
     end
-    word + consonants.join + "ay"
   end
 
 end
