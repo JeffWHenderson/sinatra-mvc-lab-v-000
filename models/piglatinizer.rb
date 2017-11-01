@@ -12,8 +12,11 @@ class PigLatinizer
     if vowels.include?(word[0])
       word + 'way'
     else
-      until vowels.include?(word[0])
-        consonants << word.split[0]
+      word.each_char do |char|
+        until vowels.include?(char)
+          consonants << char
+          char = ""
+        end
       end
     end
   end
