@@ -16,6 +16,7 @@ class PigLatinizer
         consonants << word.slice!(0)
       end
     end
-  end 
+    word
+  end
 
 end
