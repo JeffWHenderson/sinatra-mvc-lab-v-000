@@ -13,7 +13,7 @@ class PigLatinizer
       word + 'way'
     else
       word[0] << consonants
-      word + consonants + "ay"
+      word + consonants.to_s + "ay"
     end
   end
 
