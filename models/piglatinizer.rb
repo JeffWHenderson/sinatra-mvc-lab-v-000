@@ -9,6 +9,9 @@ class PigLatinizer
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     if vowels.include?(word[0])
       word + 'way'
+    else
+      word[0] << consonants 
+      word + consonants + "ay"
     end
   end
 
