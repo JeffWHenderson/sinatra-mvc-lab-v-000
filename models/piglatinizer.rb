@@ -19,4 +19,7 @@ class PigLatinizer
     end
   end
 
+  def to_pig_latin(sentence)
+    sentence.split.each {|word| piglatinize(word)}
+  end
 end
