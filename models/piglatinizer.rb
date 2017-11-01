@@ -16,7 +16,7 @@ class PigLatinizer
         consonants << word.slice!(0)
       end
     end
-    word + consonants.join
+    word + consonants.join + "ay"
   end
 
 end
